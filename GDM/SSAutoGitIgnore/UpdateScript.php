@@ -13,6 +13,7 @@ class UpdateScript {
         $ignores     = array();
         foreach ($packageInfo->GetSSModules() as $value) {
             $ignores[] = "/" . $value["path"] . "/";
+            $ignores[] = "/" . $value["path"];
         }
         sort($ignores);
 
